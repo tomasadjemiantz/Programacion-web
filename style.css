@@ -1,1 +1,10 @@
-h2{color: #21bc05;}
+h2{color: #21bc05;
+}
+<head>
+<style>
+body {background-color: Gray;}
+h1   {color: Orange;}
+p    {color: Black;}
+</style>
+</head>
+<body>
