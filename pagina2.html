@@ -4,9 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bienvenido a tu billetera virtual</title>
 </head>
 <body>
-    
+</h1><p><strong><ins> Iniciar sesión </ins></strong></p></h1>
+<form action="registrardatos.php" method="post">
+    Ingrese su nombre: 
+    <input type="text" name="nombre" size="20">
+    <br>
+    Ingrese su clave: 
+    <input type="password" name="clave" size="12">
+    <br>
+    <input type="submit" value="enviar">
+    <input type="reset" value="borrar">
+  </form>
+  <br>
+  <form action="registrardatos.php" method="post">
+    Seleccione su pais:
+    <select name="pais">
+      <option value="1">Argentina</option>
+      <option value="2">España</option>
+      <option value="3">México</option>
+      <option value="4">Guatemala</option>
+      <option value="5">Honduras</option>
+      <option value="7">El Salvador</option>
+      <option value="8">Venezuela</option>
+      <option value="9">Colombia</option>
+      <option value="10">Cuba</option>
+      <option value="11">Bolivia</option>
+      <option value="13">Perú</option>
+      <option value="14">Ecuador</option>
+      <option value="15">Paraguay</option>
+      <option value="16">Uruguay</option>
+      <option value="17">Chile</option>
+      <option value="18">Francia</option>
+      <option value="19">Estados Unidos</option>
+    </select>
+    <br>
+    <input type="submit" value="Enviar">
+  </form>
 </body>
 </html>
