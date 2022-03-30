@@ -19,12 +19,6 @@ menu{
 menu > a > li{
     display: inline;
 }
-#col-izq{
-    width: 50%; float: right; height: 400px;
-}
-#col-der {
-    width: 50%; float: right; height: 400px;
-}
 #logo-header{
     width: 8%;
 }
