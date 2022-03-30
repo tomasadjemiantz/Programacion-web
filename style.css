@@ -1,7 +1,13 @@
 body {background-color: Gray;}
-P{color:orange;}
+P{color:orange;
+}
 #icono-wpp{
     width: 2%; position: fixed;
     bottom: 30px;
     right: 20px;
+}
+menu{
+    list-style-type: none;
+    position: sticky;
+    position: -webkit-sticky;
 }
