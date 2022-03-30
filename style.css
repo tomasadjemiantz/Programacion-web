@@ -20,7 +20,7 @@ menu > a > li{
     display: inline;
 }
 #col-izq{
-    width: 50%; float: left; height: 1000px;
+    width: 50%; float: right; height: 1000px;
 }
 #col-der {
     width: 50%; float: right; height: 1000px;
