@@ -20,11 +20,15 @@ menu > a > li{
     display: inline;
 }
 #col-izq{
-    width: 50%; float: left;
+    width: 50%; float: left; height: 1000px;
 }
 #col-der {
-    width: 50%; float: right;
+    width: 50%; float: left; height: 1000px;
 }
 #logo-header{
     width: 8%;
+}
+footer{
+    position: fixed;
+    bottom: 0px;
 }
