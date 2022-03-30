@@ -18,7 +18,6 @@ menu{
 }
 menu > a > li{
     display: inline;
-    float: right;
 }
 #col-izq{
     width: 50%; float: left;
@@ -28,5 +27,4 @@ menu > a > li{
 }
 #logo-header{
     width: 8%;
-    float: left;
 }
