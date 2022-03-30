@@ -19,3 +19,9 @@ menu{
 menu > a > li{
     display: inline;
 }
+#col-izq{
+    width: 50%;
+}
+#col-der {
+    width: 50%;
+}
