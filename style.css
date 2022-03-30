@@ -6,8 +6,13 @@ P{color:orange;
     bottom: 30px;
     right: 20px;
 }
-menu{
+header{
     list-style-type: none;
     position: sticky;
     position: -webkit-sticky;
+    top: 0px;
+    background-color: orangered;
+}
+menu{
+    list-style-type: none;
 }
