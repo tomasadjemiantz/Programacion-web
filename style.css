@@ -1,5 +1,6 @@
 body {background-color: Gray;}
 P{color:orange;
+    font-family: Arial, Helvetica, sans-serif;
 }
 #icono-wpp{
     width: 2%; position: fixed;
