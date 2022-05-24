@@ -1,16 +1,263 @@
-function registarse(stirng){
-  return "te registraste exitosamente"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wance</title>
+    <link rel="shortcut icon" href="pelota tenis.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+</head>
+ 
+<style>
+@font-face {
+  font-family: titlefont;
+  src: url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 }
-function sumarEdad(){
-  let nombreUsuario = document.getElementById("nombre").value
-  let edadUsuario = document.getElementById("edad").value
-  let chequeado = document.getElementById("bases").checked
-  if(chequeado!= true){
-      alert("Debe estar de acuerdo con las condiciones")
+.Titulo_principal{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  padding-left: 15px;
+  margin-right: 600px;
+}
+.zonabotones{ /*navbar   */
+  background-color: rgba(192, 192, 192, 0.822);
+  justify-content: flex-end;
+  padding: 0px;
+  border-radius: 0px;
+}
+.card{
+  margin: 20px;
+}
+.button{
+  padding: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.button:hover{
+  background-color: lightgray;
+  padding-top: 15px;
+}
+.btn4{
+  margin-right: 35px;
+}
+.zona_imagenes_iniciales{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.descripcion_general{
+    text-align: center;
+    background-color: rgba(238, 154, 120, 0.445);
+    padding: 80px;
+    margin: 0px;
+}
+.fila1prod{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+ 
+}
+.fila2prod{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.productos{
+  background-color: rgb(135, 187, 211);
+}
+.btn_carrito{
+  border-radius: 100%;
+  background-color: silver;
+  border-color: silver;
+  text-align: center;
+}
+.btn_carrito:hover{
+  background-color: rgb(24, 209, 24);
+  border-color: rgb(24, 209, 24);
+}
+.texto_calcu{
+  padding-top: 26px;
+  padding-left: 8%;
+  padding-bottom: 1px;
+  font-size: 18px;
+  background-color: lightgray;
+}
+.zona_calculo{
+  margin-top: 10px;
+  text-align: center;
+  font-size: 30px;
+}
+.text-muted{
+  margin-left: 3px;
+  margin-right: 3px;
+}
+@media only screen and (max-width: 414px) {
+  .imagen1y3 {
+    display: none;
   }
-  if(edadUsuario <= 17){
-      alert ("Estas violando los terminos y condiciones")
-  }
-  if(edadUsuario>=18 && chequeado == true){
-      document.body.append(` El nombre de usuario es ${nombreUsuario}, tenes ${edadUsuario} y ${registarse(edadUsuario)}`)
-  }
+}
+</style>
+ 
+ 
+ 
+<body>
+ 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <div class="btn zonabotones navbar sticky-top " >
+<a class="btn button" href="https://repositorio-phi.vercel.app/">Inicio</a>
+<a class="btn button" href="#productos">Productos</a>
+<a class="btn button" href="#pie">Contacto</a>
+<a class="btn button btn4" href="#calculadora">Carrito</a>
+    </div>
+ 
+<h1 class="Titulo_principal sticky-top">THE PADEL STORE</h1>
+ 
+<div class="zona_imagenes_iniciales">
+<img class="imagen1y3" src="./BullpadelLogo.png" alt="Bullpadel" style="width: 560px;height: 400px;">
+ 
+<img class="responsive" src="./worldpadeltourlogo.jpg" alt="World Padel Tour" style="width: 399px;height: 400px;">
+ 
+<img class="imagen1y3" src="./headlogo.jpg" alt="World Padel Tour" style= "width: 560px;height: 400px;">
+</div>
+ 
+<h5 class="descripcion_general">Las mejores palas las encontrás al mejor precio en The Padel Store. Contamos con servicio personalizado para que elijas la pala que mejor se amolde a tu juego!</h5>
+<div class="productos">
+ 
+<div class="fila1prod" id="productos">
+    <!-- aca hay 2 columnas de productos con un fondo de color que esta atras con margenes de otro color a los costados donde no hay fotos -->
+    <div class="card" style="width: 18rem;">
+      <img src="./paleta hack 02 21.jpg" class="card-img-top" alt="">
+      <div class="card-body">
+        <h5 class="card-title">Hack 02 21</h5>
+        <p class="card-text">La nueva pala Hack 02 2021 es una pala de máxima potencia y alto rendimiento, diseñada para jugadores profesionales o avanzados, con marco 100% fibra de carbono, que incorpora el nuevo sistema Adaptia y también el novedoso CustomWeigth.</p>
+        <a href="https://www.bullpadelargentina.com.ar/productos/hack-02-21/" class="btn btn-primary" target="_blank">Comprar</a>
+        <button type="button" class="btn btn-primary btn_carrito" onclick="sumaProductos(82000)">+</button>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="./paleta shake 2021.jpg" class="card-img-top" alt="">
+      <div class="card-body">
+        <h5 class="card-title">Shake 2021</h5>
+        <p class="card-text">La paleta Bullpadel Shake colección 2021 es una paleta muy ligera y de máximo control para jugadores amateurs y ocasionales</p>
+        <a href="https://www.spacex.com/rideshare/" class="btn btn-primary" target="_blank">Comprar</a>
+        <button type="button" class="btn btn-primary btn_carrito" onclick="sumaProductos(25500)">+</button>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="./hack comfort 2021.jpg" class="card-img-top" alt="">
+      <div class="card-body">
+        <h5 class="card-title">Hack Comfort 2021</h5>
+        <p class="card-text">La nueva paleta Hack Comfort colección 2021, es de máxima potencia y alto rendimiento. Está diseñada para jugadores profesionales y avanzados con marco 100% fibra de carbono</p>
+        <a href="https://www.bullpadelargentina.com.ar/productos/hack-comfort-2021/" class="btn btn-primary" target="_blank">Comprar</a>
+        <button type="button" class="btn btn-primary btn_carrito" onclick="sumaProductos(59000)">+</button>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="./pala axym woman 22.jpg" class="card-img-top" alt="">
+      <div class="card-body">
+        <h5 class="card-title">AXYM Woman 22</h5>
+        <p class="card-text">Versión para mujer de la nueva paleta Bullpadel AXYM, se destaca por su manejabilidad y eficacia.
+ 
+            Es una paleta para jugadores de nivel medio o avanzado</p>
+        <a href="https://www.bullpadelargentina.com.ar/productos/hack-comfort-2021/" class="btn btn-primary" target="_blank">Comprar</a>
+        <button type="button" class="btn btn-primary btn_carrito" onclick="sumaProductos(83000)">+</button>
+      </div>
+    </div>
+  </div>
+  <div class="fila2prod">
+    <div class="card" style="width: 18rem;">
+      <img src="./pala head graphene 360.jpg" class="card-img-top" alt="">
+      <div class="card-body">
+        <h5 class="card-title">HEAD Graphene 360+</h5>
+        <p class="card-text">Este modelo es más cómodo, manejable y potente que su predecesor, gracias al Graphene 360+ en el marco para un toque y potencia ilimitados, y al nuevo material híbrido en la cara. Esta paleta de alta gama Head Graphene 360+ Delta Hybrid With Cb está destinada a los jugadores de nivel avanzado o profesional con amplia experiencia en el padel</p>
+        <a href="https://www.solodeportes.com.ar/paleta-padel-head-graphene-360-delta-hybrid.html?nosto=productcategory-nosto-1-fallback-nosto-1" class="btn btn-primary" target="_blank">Comprar</a>
+        <button type="button" class="btn btn-primary btn_carrito" onclick="sumaProductos(67390)">+</button>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="./pala HEAD Zephyr Pro.jpg" class="card-img-top" alt="">
+      <div class="card-body">
+        <h5 class="card-title">HEAD Zephyr Pro</h5>
+        <p class="card-text">Está ideada para jugadores de nivel intermedio que quieren que su juego fluya.
+            Haz que tu juego fluya con la pala de pádel ZEPHYR PRO, que ofrece comodidad, maniobrabilidad y potencia.
+            Aunque sea la pala más pesada de la serie ZEPHYR, lo que garantiza una mayor estabilidad al impacto, te ofrece una sensación suave y de confort</p>
+        <a href="https://www.solodeportes.com.ar/paleta-de-padel-head-zephyr-pro.html?nosto=productcategory-nosto-1-fallback-nosto-1" class="btn btn-primary" target="_blank">Comprar</a>
+        <button type="button" class="btn btn-primary btn_carrito" onclick="sumaProductos(54720)">+</button>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="./bolso tour.jpg" class="card-img-top" alt="">
+      <div class="card-body">
+        <h5 class="card-title">Bolso Tour</h5>
+        <p class="card-text">El bolso paletero Tour es el hermano pequeño, independiente y funcional de nuestra colección.
+ 
+            Cuenta con un compartimento lateral acolchado para una paleta y un amplio compartimento para ropa y calzado, además de un bolsillo exterior para accesorios</p>
+        <a href="https://www.bullpadelargentina.com.ar/productos/bolso-tour-importado/" class="btn btn-primary" target="_blank">Comprar</a>
+        <button type="button" class="btn btn-primary btn_carrito" onclick="sumaProductos(15400)">+</button>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="./pelotas padel.jpg" class="card-img-top" alt="">
+      <div class="card-body">
+        <h5 class="card-title">Pelotas HEAD Padel Pro</h5>
+        <p class="card-text">La Head Padel Pro es sin duda la pelota más famosa del circuito profesional World Padel Tour, un modelo además, elegido por los propios jugadores.  
+            Se trata de un modelo premium de gran control y larga duración para los padelistas más exigentes</p>
+        <a href="https://www.solodeportes.com.ar/tubo-x3-padel-pro-head-7978710.html" class="btn btn-primary" target="_blank">Comprar</a>
+        <button type="button" class="btn btn-primary btn_carrito" onclick="sumaProductos(2515)">+</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="zona_calculadora" id="calculadora">
+<div class="texto_calcu">
+  <h3>Carrito</h3>
+  <p>¡Tocá el "+" en el producto que querés para agregarlo al carrito!</p>
+</div>
+<div class="zona_calculo">
+  <p id="elTotal">TOTAL: 0 Pesos</p>
+  <button type="button" class="btn btn-primary " onclick="Limpiar()">Vaciar Carrito</button>
+</div>
+ 
+  <script>
+    let Total = 0
+ 
+    function sumaProductos(Valoritem) {
+      Total = Total + Valoritem
+      document.getElementById("elTotal").innerHTML = "TOTAL: " + "$" + Total;
+    }
+ 
+    function Limpiar() {
+      Total=0
+      document.getElementById("elTotal").innerHTML = "TOTAL: " + "$" + 0;
+    }
+ 
+  </script>
+ 
+</div>
+<div class="container" id="pie">
+  <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="https://bullpadelargentina.com.ar" class="nav-link px-2 text-muted">Bullpadel Argentina</a></li>
+      <li class="nav-item"><a href="https://www.solodeportes.com.ar/deportes/paddle.html" class="nav-link px-2 text-muted">Solo Deportes</a></li>
+      <li class="nav-item"><a href="https://www.head.com/en/padel.html" class="nav-link px-2 text-muted">HEAD</a></li>
+    </ul>
+    <p class="text-center text-muted">© 2022 Juan Francisco Gil Rodríguez</p>
+    <p class="text-center text-muted">Información de Contacto:
+      <br> <b>Email</b> jgilrodriguez@itba.edu.ar
+    </p>
+  </footer>
+ 
+ 
+</div>
+ 
+ 
+ 
+</div>
+ 
+ 
+ 
+</body>
+</html>
