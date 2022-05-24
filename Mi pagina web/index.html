@@ -1,263 +1,314 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wance</title>
-    <link rel="shortcut icon" href="pelota tenis.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
- 
-<style>
-@font-face {
-  font-family: titlefont;
-  src: url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+<body id="myPage">
+
+<!-- Sidebar on click -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
+    <i class="fa fa-remove"></i>
+  </a>
+  <a href="#" class="w3-bar-item w3-button">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+  <a href="#" class="w3-bar-item w3-button">Link 4</a>
+  <a href="#" class="w3-bar-item w3-button">Link 5</a>
+</nav>
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Logo</a>
+  <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Team</a>
+  <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Work</a>
+  <a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Price</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">Dropdown <i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="#" class="w3-bar-item w3-button">Link</a>
+      <a href="#" class="w3-bar-item w3-button">Link</a>
+      <a href="#" class="w3-bar-item w3-button">Link</a>
+    </div>
+  </div>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
+ </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="#team" class="w3-bar-item w3-button">Team</a>
+    <a href="#work" class="w3-bar-item w3-button">Work</a>
+    <a href="#pricing" class="w3-bar-item w3-button">Price</a>
+    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    <a href="#" class="w3-bar-item w3-button">Search</a>
+  </div>
+</div>
+
+<!-- Image Header -->
+<div class="w3-display-container w3-animate-opacity">
+  <img src="/w3images/sailboat.jpg" alt="boat" style="width:100%;min-height:350px;max-height:600px;">
+  <div class="w3-container w3-display-bottomleft w3-margin-bottom">  
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Go To W3.CSS">LEARN W3.CSS</button>
+  </div>
+</div>
+
+<!-- Modal -->
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-top">
+    <header class="w3-container w3-teal w3-display-container"> 
+      <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
+      <h4>Oh snap! We just showed you a modal..</h4>
+      <h5>Because we can <i class="fa fa-smile-o"></i></h5>
+    </header>
+    <div class="w3-container">
+      <p>Cool huh? Ok, enough teasing around..</p>
+      <p>Go to our <a class="w3-text-teal" href="/w3css/default.asp">W3.CSS Tutorial</a> to learn more!</p>
+    </div>
+    <footer class="w3-container w3-teal">
+      <p>Modal footer</p>
+    </footer>
+  </div>
+</div>
+
+<!-- Team Container -->
+<div class="w3-container w3-padding-64 w3-center" id="team">
+<h2>OUR TEAM</h2>
+<p>Meet the team - our office rats:</p>
+
+<div class="w3-row"><br>
+
+<div class="w3-quarter">
+  <img src="/w3images/avatar.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Johnny Walker</h3>
+  <p>Web Designer</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="/w3images/avatar.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Rebecca Flex</h3>
+  <p>Support</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="/w3images/avatar.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Jan Ringo</h3>
+  <p>Boss man</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="/w3images/avatar.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Kai Ringo</h3>
+  <p>Fixer</p>
+</div>
+
+</div>
+</div>
+
+<!-- Work Row -->
+<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
+
+<div class="w3-quarter">
+<h2>Our Work</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="/w3images/snow.jpg" alt="Snow" style="width:100%">
+  <div class="w3-container">
+  <h3>Customer 1</h3>
+  <h4>Trade</h4>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="/w3images/lights.jpg" alt="Lights" style="width:100%">
+  <div class="w3-container">
+  <h3>Customer 2</h3>
+  <h4>Trade</h4>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="/w3images/mountains.jpg" alt="Mountains" style="width:100%">
+  <div class="w3-container">
+  <h3>Customer 3</h3>
+  <h4>Trade</h4>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  </div>
+  </div>
+</div>
+
+</div>
+
+<!-- Container -->
+<div class="w3-container" style="position:relative">
+  <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
+  style="position:absolute;top:-28px;right:24px">+</a>
+</div>
+
+<!-- Pricing Row -->
+<div class="w3-row-padding w3-center w3-padding-64" id="pricing">
+    <h2>PRICING</h2>
+    <p>Choose a pricing plan that fits your needs.</p><br>
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme">
+          <p class="w3-xlarge">Basic</p>
+        </li>
+        <li class="w3-padding-16"><b>10GB</b> Storage</li>
+        <li class="w3-padding-16"><b>10</b> Emails</li>
+        <li class="w3-padding-16"><b>10</b> Domains</li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide"><i class="fa fa-usd"></i> 10</h2>
+          <span class="w3-opacity">per month</span>
+        </li>
+        <li class="w3-theme-l5 w3-padding-24">
+          <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme-l2">
+          <p class="w3-xlarge">Pro</p>
+        </li>
+        <li class="w3-padding-16"><b>25GB</b> Storage</li>
+        <li class="w3-padding-16"><b>25</b> Emails</li>
+        <li class="w3-padding-16"><b>25</b> Domains</li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide"><i class="fa fa-usd"></i> 25</h2>
+          <span class="w3-opacity">per month</span>
+        </li>
+        <li class="w3-theme-l5 w3-padding-24">
+          <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme">
+          <p class="w3-xlarge">Premium</p>
+        </li>
+        <li class="w3-padding-16"><b>50GB</b> Storage</li>
+        <li class="w3-padding-16"><b>50</b> Emails</li>
+        <li class="w3-padding-16"><b>50</b> Domains</li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide"><i class="fa fa-usd"></i> 50</h2>
+          <span class="w3-opacity">per month</span>
+        </li>
+        <li class="w3-theme-l5 w3-padding-24">
+          <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
+        </li>
+      </ul>
+    </div>
+</div>
+
+<!-- Contact Container -->
+<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+  <div class="w3-row">
+    <div class="w3-col m5">
+    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact Us</span></div>
+      <h3>Address</h3>
+      <p>Swing by for a cup of coffee, or whatever.</p>
+      <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Chicago, US</p>
+      <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +00 1515151515</p>
+      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  test@test.com</p>
+    </div>
+    <div class="w3-col m7">
+      <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
+      <div class="w3-section">      
+        <label>Name</label>
+        <input class="w3-input" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">      
+        <label>Email</label>
+        <input class="w3-input" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">      
+        <label>Message</label>
+        <input class="w3-input" type="text" name="Message" required>
+      </div>  
+      <input class="w3-check" type="checkbox" checked name="Like">
+      <label>I Like it!</label>
+      <button type="submit" class="w3-button w3-right w3-theme">Send</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%;">
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+  <h4>Follow Us</h4>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-instagram"></i></a>
+  <a class="w3-button w3-large w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+
+  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
+    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
+
+<script>
+// Script for side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "300px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
 }
-.Titulo_principal{
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  padding-top: 20px;
-  padding-bottom: 30px;
-  padding-left: 15px;
-  margin-right: 600px;
+
+// Close side navigation
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
 }
-.zonabotones{ /*navbar   */
-  background-color: rgba(192, 192, 192, 0.822);
-  justify-content: flex-end;
-  padding: 0px;
-  border-radius: 0px;
-}
-.card{
-  margin: 20px;
-}
-.button{
-  padding: 20px;
-  padding-left: 25px;
-  padding-right: 25px;
-}
-.button:hover{
-  background-color: lightgray;
-  padding-top: 15px;
-}
-.btn4{
-  margin-right: 35px;
-}
-.zona_imagenes_iniciales{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-.descripcion_general{
-    text-align: center;
-    background-color: rgba(238, 154, 120, 0.445);
-    padding: 80px;
-    margin: 0px;
-}
-.fila1prod{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
- 
-}
-.fila2prod{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.productos{
-  background-color: rgb(135, 187, 211);
-}
-.btn_carrito{
-  border-radius: 100%;
-  background-color: silver;
-  border-color: silver;
-  text-align: center;
-}
-.btn_carrito:hover{
-  background-color: rgb(24, 209, 24);
-  border-color: rgb(24, 209, 24);
-}
-.texto_calcu{
-  padding-top: 26px;
-  padding-left: 8%;
-  padding-bottom: 1px;
-  font-size: 18px;
-  background-color: lightgray;
-}
-.zona_calculo{
-  margin-top: 10px;
-  text-align: center;
-  font-size: 30px;
-}
-.text-muted{
-  margin-left: 3px;
-  margin-right: 3px;
-}
-@media only screen and (max-width: 414px) {
-  .imagen1y3 {
-    display: none;
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
   }
 }
-</style>
- 
- 
- 
-<body>
- 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
-    <div class="btn zonabotones navbar sticky-top " >
-<a class="btn button" href="https://repositorio-phi.vercel.app/">Inicio</a>
-<a class="btn button" href="#productos">Productos</a>
-<a class="btn button" href="#pie">Contacto</a>
-<a class="btn button btn4" href="#calculadora">Carrito</a>
-    </div>
- 
-<h1 class="Titulo_principal sticky-top">THE PADEL STORE</h1>
- 
-<div class="zona_imagenes_iniciales">
-<img class="imagen1y3" src="./BullpadelLogo.png" alt="Bullpadel" style="width: 560px;height: 400px;">
- 
-<img class="responsive" src="./worldpadeltourlogo.jpg" alt="World Padel Tour" style="width: 399px;height: 400px;">
- 
-<img class="imagen1y3" src="./headlogo.jpg" alt="World Padel Tour" style= "width: 560px;height: 400px;">
-</div>
- 
-<h5 class="descripcion_general">Las mejores palas las encontrás al mejor precio en The Padel Store. Contamos con servicio personalizado para que elijas la pala que mejor se amolde a tu juego!</h5>
-<div class="productos">
- 
-<div class="fila1prod" id="productos">
-    <!-- aca hay 2 columnas de productos con un fondo de color que esta atras con margenes de otro color a los costados donde no hay fotos -->
-    <div class="card" style="width: 18rem;">
-      <img src="./paleta hack 02 21.jpg" class="card-img-top" alt="">
-      <div class="card-body">
-        <h5 class="card-title">Hack 02 21</h5>
-        <p class="card-text">La nueva pala Hack 02 2021 es una pala de máxima potencia y alto rendimiento, diseñada para jugadores profesionales o avanzados, con marco 100% fibra de carbono, que incorpora el nuevo sistema Adaptia y también el novedoso CustomWeigth.</p>
-        <a href="https://www.bullpadelargentina.com.ar/productos/hack-02-21/" class="btn btn-primary" target="_blank">Comprar</a>
-        <button type="button" class="btn btn-primary btn_carrito" onclick="sumaProductos(82000)">+</button>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <img src="./paleta shake 2021.jpg" class="card-img-top" alt="">
-      <div class="card-body">
-        <h5 class="card-title">Shake 2021</h5>
-        <p class="card-text">La paleta Bullpadel Shake colección 2021 es una paleta muy ligera y de máximo control para jugadores amateurs y ocasionales</p>
-        <a href="https://www.spacex.com/rideshare/" class="btn btn-primary" target="_blank">Comprar</a>
-        <button type="button" class="btn btn-primary btn_carrito" onclick="sumaProductos(25500)">+</button>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <img src="./hack comfort 2021.jpg" class="card-img-top" alt="">
-      <div class="card-body">
-        <h5 class="card-title">Hack Comfort 2021</h5>
-        <p class="card-text">La nueva paleta Hack Comfort colección 2021, es de máxima potencia y alto rendimiento. Está diseñada para jugadores profesionales y avanzados con marco 100% fibra de carbono</p>
-        <a href="https://www.bullpadelargentina.com.ar/productos/hack-comfort-2021/" class="btn btn-primary" target="_blank">Comprar</a>
-        <button type="button" class="btn btn-primary btn_carrito" onclick="sumaProductos(59000)">+</button>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <img src="./pala axym woman 22.jpg" class="card-img-top" alt="">
-      <div class="card-body">
-        <h5 class="card-title">AXYM Woman 22</h5>
-        <p class="card-text">Versión para mujer de la nueva paleta Bullpadel AXYM, se destaca por su manejabilidad y eficacia.
- 
-            Es una paleta para jugadores de nivel medio o avanzado</p>
-        <a href="https://www.bullpadelargentina.com.ar/productos/hack-comfort-2021/" class="btn btn-primary" target="_blank">Comprar</a>
-        <button type="button" class="btn btn-primary btn_carrito" onclick="sumaProductos(83000)">+</button>
-      </div>
-    </div>
-  </div>
-  <div class="fila2prod">
-    <div class="card" style="width: 18rem;">
-      <img src="./pala head graphene 360.jpg" class="card-img-top" alt="">
-      <div class="card-body">
-        <h5 class="card-title">HEAD Graphene 360+</h5>
-        <p class="card-text">Este modelo es más cómodo, manejable y potente que su predecesor, gracias al Graphene 360+ en el marco para un toque y potencia ilimitados, y al nuevo material híbrido en la cara. Esta paleta de alta gama Head Graphene 360+ Delta Hybrid With Cb está destinada a los jugadores de nivel avanzado o profesional con amplia experiencia en el padel</p>
-        <a href="https://www.solodeportes.com.ar/paleta-padel-head-graphene-360-delta-hybrid.html?nosto=productcategory-nosto-1-fallback-nosto-1" class="btn btn-primary" target="_blank">Comprar</a>
-        <button type="button" class="btn btn-primary btn_carrito" onclick="sumaProductos(67390)">+</button>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <img src="./pala HEAD Zephyr Pro.jpg" class="card-img-top" alt="">
-      <div class="card-body">
-        <h5 class="card-title">HEAD Zephyr Pro</h5>
-        <p class="card-text">Está ideada para jugadores de nivel intermedio que quieren que su juego fluya.
-            Haz que tu juego fluya con la pala de pádel ZEPHYR PRO, que ofrece comodidad, maniobrabilidad y potencia.
-            Aunque sea la pala más pesada de la serie ZEPHYR, lo que garantiza una mayor estabilidad al impacto, te ofrece una sensación suave y de confort</p>
-        <a href="https://www.solodeportes.com.ar/paleta-de-padel-head-zephyr-pro.html?nosto=productcategory-nosto-1-fallback-nosto-1" class="btn btn-primary" target="_blank">Comprar</a>
-        <button type="button" class="btn btn-primary btn_carrito" onclick="sumaProductos(54720)">+</button>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <img src="./bolso tour.jpg" class="card-img-top" alt="">
-      <div class="card-body">
-        <h5 class="card-title">Bolso Tour</h5>
-        <p class="card-text">El bolso paletero Tour es el hermano pequeño, independiente y funcional de nuestra colección.
- 
-            Cuenta con un compartimento lateral acolchado para una paleta y un amplio compartimento para ropa y calzado, además de un bolsillo exterior para accesorios</p>
-        <a href="https://www.bullpadelargentina.com.ar/productos/bolso-tour-importado/" class="btn btn-primary" target="_blank">Comprar</a>
-        <button type="button" class="btn btn-primary btn_carrito" onclick="sumaProductos(15400)">+</button>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <img src="./pelotas padel.jpg" class="card-img-top" alt="">
-      <div class="card-body">
-        <h5 class="card-title">Pelotas HEAD Padel Pro</h5>
-        <p class="card-text">La Head Padel Pro es sin duda la pelota más famosa del circuito profesional World Padel Tour, un modelo además, elegido por los propios jugadores.  
-            Se trata de un modelo premium de gran control y larga duración para los padelistas más exigentes</p>
-        <a href="https://www.solodeportes.com.ar/tubo-x3-padel-pro-head-7978710.html" class="btn btn-primary" target="_blank">Comprar</a>
-        <button type="button" class="btn btn-primary btn_carrito" onclick="sumaProductos(2515)">+</button>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="zona_calculadora" id="calculadora">
-<div class="texto_calcu">
-  <h3>Carrito</h3>
-  <p>¡Tocá el "+" en el producto que querés para agregarlo al carrito!</p>
-</div>
-<div class="zona_calculo">
-  <p id="elTotal">TOTAL: 0 Pesos</p>
-  <button type="button" class="btn btn-primary " onclick="Limpiar()">Vaciar Carrito</button>
-</div>
- 
-  <script>
-    let Total = 0
- 
-    function sumaProductos(Valoritem) {
-      Total = Total + Valoritem
-      document.getElementById("elTotal").innerHTML = "TOTAL: " + "$" + Total;
-    }
- 
-    function Limpiar() {
-      Total=0
-      document.getElementById("elTotal").innerHTML = "TOTAL: " + "$" + 0;
-    }
- 
-  </script>
- 
-</div>
-<div class="container" id="pie">
-  <footer class="py-3 my-4">
-    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-      <li class="nav-item"><a href="https://bullpadelargentina.com.ar" class="nav-link px-2 text-muted">Bullpadel Argentina</a></li>
-      <li class="nav-item"><a href="https://www.solodeportes.com.ar/deportes/paddle.html" class="nav-link px-2 text-muted">Solo Deportes</a></li>
-      <li class="nav-item"><a href="https://www.head.com/en/padel.html" class="nav-link px-2 text-muted">HEAD</a></li>
-    </ul>
-    <p class="text-center text-muted">© 2022 Juan Francisco Gil Rodríguez</p>
-    <p class="text-center text-muted">Información de Contacto:
-      <br> <b>Email</b> jgilrodriguez@itba.edu.ar
-    </p>
-  </footer>
- 
- 
-</div>
- 
- 
- 
-</div>
- 
- 
- 
+</script>
+
 </body>
 </html>
