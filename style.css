@@ -14,12 +14,3 @@ footer{
     height: 50px;
     width: 100%;
 }
-.w3-container-w3-padding-32-w3-theme-d1-w3-center{
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 5opx;
-    padding: 45px 0px;
-}
