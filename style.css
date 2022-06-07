@@ -9,3 +9,8 @@
     text-align: center;
 }
 
+.imagenLogoInicial{
+    width:100%;
+    min-height:350px;
+    max-height:600px;
+}
