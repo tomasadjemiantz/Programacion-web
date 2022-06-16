@@ -22,3 +22,10 @@
 #ImagenDeMiOficina{
     width:100%;
 }
+.LinkEror404 {
+    background-color: grey;
+    color: orange;
+    padding: 15px 25px;
+    text-decoration: none;
+  }
+  
