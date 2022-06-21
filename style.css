@@ -21,6 +21,7 @@
 }
 #ImagenDeMiOficina{
     width:100%;
+    border-radius: 20px;
 }
 .LinkEror404 {
     background-color: grey;
