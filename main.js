@@ -7,7 +7,7 @@
 //segundos
 function cargarSegundo() {
 
-  let txtSegundos =0;
+  let txtSegundos = 0;
 
   if (segundos < 0) {
     segundos = 59;
