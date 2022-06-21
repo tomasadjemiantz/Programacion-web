@@ -29,5 +29,6 @@
     text-decoration: none;
   }
 .OurOffice {
-    background-color: orange; 
+    background-color: orange;
+    border-radius: 8px;
 }  
