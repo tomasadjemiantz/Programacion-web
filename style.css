@@ -38,6 +38,7 @@
     background-color: orange;
     border-radius: 20px;
 }  
+
 #clockdiv{
   font-family: sans-serif;
   color: black;
@@ -51,12 +52,14 @@
   border-radius: 3px;
   display: inline-block;
 }
+
 #clockdiv div > span{
   padding: 15px;
   border-radius: 3px;
   background: orangered;
   display: inline-block;
 }
+
 smalltext{
   padding-top: 5px;
   font-size: 16px;
