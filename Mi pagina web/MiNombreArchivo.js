@@ -3,7 +3,7 @@ let minutos = 0;
 let segundos = 0;
 cargarSegundo();
 
-//los segundos
+//segundos
 function cargarSegundo() {
   let txtSegundos;
 
@@ -11,7 +11,7 @@ function cargarSegundo() {
     segundos = 59;
   }
 
-  //los segundos en la pantalla
+  //segundos en pantalla
   if (segundos < 10) {
     txtSegundos = `0${segundos}`;
   } else {
@@ -23,7 +23,7 @@ function cargarSegundo() {
   cargarMinutos(segundos);
 }
 
-//los minutos
+//minutos
 function cargarMinutos(segundos) {
   let txtMinutos;
 
@@ -61,7 +61,7 @@ function cargarHoras(segundos, minutos) {
     }, 500);
   }
 
-  //Las horas en la pantalla
+  //Horas en pantalla
   if (horas < 10) {
     txtHoras = `0${horas}`;
   } else {
