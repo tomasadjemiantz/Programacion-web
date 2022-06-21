@@ -9,7 +9,7 @@
     text-align: center;
 }
 
-.imagenLogoInicial{
+.ImagenLogoInicial{
     width:100%;
     min-height:350px;
     max-height:600px;
@@ -33,7 +33,7 @@
     padding: 15px 25px;
     text-decoration: none;
   }
-  
+
 .OurOffice {
     background-color: orange;
     border-radius: 20px;
