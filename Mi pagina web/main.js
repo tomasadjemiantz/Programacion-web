@@ -3,7 +3,7 @@ let minutos = 0;
 let segundos = 0;
 cargarSegundo();
 
-//segundos
+//los segundos
 function cargarSegundo() {
   let txtSegundos;
 
@@ -11,7 +11,7 @@ function cargarSegundo() {
     segundos = 59;
   }
 
-  //segundos en pantalla
+  //los segundos en la pantalla
   if (segundos < 10) {
     txtSegundos = `0${segundos}`;
   } else {
@@ -23,7 +23,7 @@ function cargarSegundo() {
   cargarMinutos(segundos);
 }
 
-//minutos
+//los minutos
 function cargarMinutos(segundos) {
   let txtMinutos;
 
@@ -37,7 +37,7 @@ function cargarMinutos(segundos) {
     }, 500);
   }
 
-  //mostrar minutos en pantalla
+  //Mostrar minutos en pantalla
   if (minutos < 10) {
     txtMinutos = `0${minutos}`;
   } else {
@@ -47,7 +47,7 @@ function cargarMinutos(segundos) {
   cargarHoras(segundos, minutos);
 }
 
-//horas
+//Las horas
 function cargarHoras(segundos, minutos) {
   let txtHoras;
 
@@ -61,7 +61,7 @@ function cargarHoras(segundos, minutos) {
     }, 500);
   }
 
-  //Horas en pantalla
+  //Las horas en la pantalla
   if (horas < 10) {
     txtHoras = `0${horas}`;
   } else {
@@ -70,5 +70,5 @@ function cargarHoras(segundos, minutos) {
   document.getElementById("horas").innerHTML = txtHoras;
 }
 
-//cada segundo
+//Cada segundo
 setInterval(cargarSegundo, 1000);
