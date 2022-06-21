@@ -49,5 +49,27 @@ function cargarMinutos(segundos) {
   cargarHoras(segundos, minutos);
 }
 
+//horas
+function cargarHoras(segundos, minutos) {
+  let txtHoras;
+  if (segundos == -1 && minutos == 0 && horas !== 0) {
+    setTimeout(() => {
+      horas--;
+    }, 500);
+  } else if (segundos == -1 && minutos == 0 && horas == 0) {
+    setTimeout(() => {
+      horas = 2;
+    }, 500);
+  }
+
+  //Horas en pantalla
+  if (horas < 10) {
+    txtHoras = `0${horas}`;
+  } else {
+    txtHoras = horas;
+  }
+  document.getElementById("horas").innerHML = txtHoras;
+}
+
 //cada segundo
 setInterval(cargarSegundo,1);
